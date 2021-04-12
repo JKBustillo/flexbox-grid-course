@@ -80,6 +80,7 @@ a {
             border: none;
             background-color: $gray;
             border-radius: $radius;
+            color: $white;
 
             &:focus {
                 background-color: $gray3;
@@ -133,5 +134,54 @@ a {
             margin-left: .5rem;
             color: $white;
         }
+    }
+}
+
+.site-footer {
+    border-top: 1px solid $gray2;
+    padding: 2rem 0 4rem;
+
+    @include tablet {
+        border-top: unset;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 1rem 0 3rem;
+
+        .container {
+            max-width: 50%;
+        }
+    }
+
+    .menu-footer {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            font-size: .8rem;
+            width: 50%;
+            margin-bottom: 1rem;
+
+            @include media(500px) {
+                width: 33%;
+            }
+
+            @include media(1033px) {
+                width: 25%;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    select {
+        appearance: none;
+        margin-top: 2rem;
+        padding: 1rem 3rem;
+        border: 1px solid $gray3;
+        border-radius: $radius;
+        font-size: .8rem;
+        background-color: $black;
+        color: $gray2;
     }
 }

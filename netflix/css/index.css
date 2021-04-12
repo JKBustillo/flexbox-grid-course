@@ -90,6 +90,7 @@ a:hover {
   border: none;
   background-color: #323232;
   border-radius: 5px;
+  color: white;
 }
 
 .login-form .input-field input:focus {
@@ -158,4 +159,63 @@ a:hover {
 .bottom-content .new-user a {
   margin-left: .5rem;
   color: white;
+}
+
+.site-footer {
+  border-top: 1px solid #8C8C8C;
+  padding: 2rem 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    border-top: unset;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1rem 0 3rem;
+  }
+  .site-footer .container {
+    max-width: 50%;
+  }
+}
+
+.site-footer .menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.site-footer .menu-footer a {
+  font-size: .8rem;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 500px) {
+  .site-footer .menu-footer a {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1033px) {
+  .site-footer .menu-footer a {
+    width: 25%;
+  }
+}
+
+.site-footer .menu-footer a:last-of-type {
+  margin-right: 0;
+}
+
+.site-footer select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  font-size: .8rem;
+  background-color: black;
+  color: #8C8C8C;
 }
