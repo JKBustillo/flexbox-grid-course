@@ -16,6 +16,12 @@
     }
 }
 
+@mixin media($custom) {
+    @media (min-width: #{$custom}) {
+        @content;
+    }
+}
+
 @mixin box-sizing($box-model) {
     box-sizing: $box-model;
 }
