@@ -8,3 +8,130 @@ html {
 *, *:after, *:before {
     @include box-sizing(inherit);
 }
+
+body {
+    background-color: $black;
+    font-family: $mainFont;
+    color: $gray2;
+
+    @include tablet {
+        background-color: unset;
+        background-image: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+}
+
+a {
+    color: $gray2;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: .5rem;
+    max-width: 180px;
+
+    @include tablet {
+        margin-top: .8rem;
+        margin-left: 2rem;
+    }
+}
+
+.login-form {
+    @include tablet {
+        background-color: rgba(0, 0, 0, 0.85);
+        max-width: 500px;
+        padding: 2rem 4rem;
+        margin: 1rem auto 4rem;
+    }
+
+    legend {
+        color: $white;
+        font-size: 2rem;
+        margin: 2rem 0;
+        font-weight: bold;
+    }
+
+    .input-field {
+        display: flex;
+        position: relative;
+        margin-bottom: .8rem;
+
+        label {
+            position: absolute;
+            top: 1.2rem;
+            left: 1rem;
+            transition: font-size .2s ease, top .2s ease;
+        }
+
+        input {
+            flex: 1;
+            padding: 1.3rem 1rem .7rem;
+            border: none;
+            background-color: $gray;
+            border-radius: $radius;
+
+            &:focus {
+                background-color: $gray3;
+                outline: none;
+
+                + label {
+                    font-size: .6rem;
+                    top: .5rem;
+                }
+            }
+        }
+    }
+
+    .submit {
+        display: flex;
+        margin-top: 2rem;
+
+        input[type="submit"] {
+            @include button($primary, $white);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 0;
+        margin: .5rem 0 9rem;
+
+        label, a {
+            font-size: .9rem;
+            text-decoration: none;
+        }
+    }
+}
+
+.bottom-content {
+    a {
+        display: block;
+    }
+
+    .new-user {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        display: flex;
+
+        a {
+            margin-left: .5rem;
+            color: $white;
+        }
+    }
+}
