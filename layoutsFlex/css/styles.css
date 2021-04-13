@@ -33,3 +33,36 @@ h2 {
 .avatar {
     margin-right: 1rem;
 }
+
+
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page h1, .page h2 {
+    margin: 0;
+}
+
+.page > * {
+    padding: 1rem;
+}
+
+.page .header {
+    background-color: #CDDC39;
+}
+
+.page .main-content {
+    background-color: #B2DFDB;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.page .footer {
+    background-color: #212121;
+    color: white;
+}
