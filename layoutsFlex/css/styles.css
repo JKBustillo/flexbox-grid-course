@@ -66,3 +66,60 @@ h2 {
     background-color: #212121;
     color: white;
 }
+
+.center {
+    background-image: url(../img/hamburguesa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center > div {
+    flex: 0 0 calc(33.3% - 3rem);
+}
+
+.center-content {
+    color: white;
+    text-align: center;
+}
+
+.center-content h1 {
+    color: #E0AB10;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.center-content p {
+    margin: 0;
+}
+
+.center-content .location {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.notice {
+    background-color: #E0AB10;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.notice span {
+    font-size: 3rem;
+    display: block;
+}
+
+.above {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.below {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
