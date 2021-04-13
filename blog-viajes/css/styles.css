@@ -28,6 +28,84 @@ img {
     max-width: 100%;
 }
 
+.hero {
+    background-image: url(../img/hero.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra {
+    position: absolute;
+    background-color: #008fd1;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.barra .contenedor {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width: 768px) {
+    .barra .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo, .navegacion {
+    text-align: center;
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .navegacion {
+        flex: 0 0 20rem;
+    }
+
+    .navegacion ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navegacion ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo-img {
+    max-width: 20rem;
+}
+
+.header-contenido h1 {
+    color: #008fd1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    max-width: 23rem;
+}
+
 /* Contenido */
 .contenido {
     background-color: white;
