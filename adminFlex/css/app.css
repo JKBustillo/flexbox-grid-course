@@ -1,0 +1,33 @@
+/** Media Queries **/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+body {
+  background-color: aquamarine;
+}
