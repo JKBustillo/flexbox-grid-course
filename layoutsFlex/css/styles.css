@@ -13,13 +13,23 @@ body {
 h2 {
     text-align: center;
 }
-.contenedor {
+.container {
     max-width: 800px;
     margin: 0 auto;
     background-color: white;
     padding: 2rem;
 }
 
+.second-level {
+    background-color: #E1E1E1;
+    padding: 1rem;
+}
 
+.comment-container {
+    display: flex;
+    align-items: flex-start;
+}
 
-
+.avatar {
+    margin-right: 1rem;
+}
