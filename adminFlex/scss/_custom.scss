@@ -12,6 +12,7 @@ html {
 body {
     font-family: $fuente_principal;
     height: 100%;
+    background-color: $gris;
 }
 
 img {
@@ -24,6 +25,12 @@ img {
 
 .oculto {
     display: none;
+}
+
+.no-menu.pagina {
+    .sidebar {
+        margin-left: -20rem;
+    }
 }
 
 .pagina {
@@ -77,6 +84,15 @@ img {
         display: flex;
         align-items: center;
         padding: 1rem;
+
+        i {
+            color: $blanco;
+            font-size: 1.2rem;
+        }
+
+        .fa-arrow-right {
+            display: none;
+        }
     }
 
     .menu-derecho {
@@ -111,6 +127,7 @@ img {
     flex: 0 0 5rem;
     padding: 1rem;
     color: $blanco;
+    transition: margin-left .3s ease;
 
     .usuario {
         display: flex;
@@ -194,4 +211,68 @@ img {
 .contenido-principal {
     flex: 1;
     display: flex;
+}
+
+.contenido {
+    flex: 1;
+    padding: 2rem;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .campo {
+        flex: 0 0 100%;
+
+        @include tablet {
+            flex: 0 0 calc(50% - 1rem);
+        }
+
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+
+        &.expandir {
+            flex: 0 0 calc(100%);
+            align-items: flex-start;
+
+            label {
+                flex: 0 0 12.5%;
+            }
+
+            textarea {
+                flex: 1;
+            }
+        }
+
+        label {
+            flex: 0 0 25%;
+        }
+
+        input[type="text"] {
+            flex: 0 0 75%;
+            height: 2rem;
+        }
+
+        .opciones {
+            display: flex;
+            flex: 1;
+            align-items: center;
+
+            label {
+                padding-left: .5rem;
+            }
+        }
+
+        &.enviar {
+            display: flex;
+            justify-content: flex-end;
+
+            .boton {
+                @include boton($primario);
+            }
+        }
+    }
 }

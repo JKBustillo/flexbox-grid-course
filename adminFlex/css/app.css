@@ -15,6 +15,7 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   height: 100%;
+  background-color: #eeeeee;
 }
 
 img {
@@ -27,6 +28,10 @@ img {
 
 .oculto {
   display: none;
+}
+
+.no-menu.pagina .sidebar {
+  margin-left: -20rem;
 }
 
 .pagina {
@@ -112,6 +117,15 @@ img {
   padding: 1rem;
 }
 
+.barra .menu-izquierdo i {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.barra .menu-izquierdo .fa-arrow-right {
+  display: none;
+}
+
 .barra .menu-derecho {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +165,8 @@ img {
           flex: 0 0 5rem;
   padding: 1rem;
   color: #FFFFFF;
+  -webkit-transition: margin-left .3s ease;
+  transition: margin-left .3s ease;
 }
 
 .sidebar .usuario {
@@ -245,4 +261,118 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contenido {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.formulario .campo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .formulario .campo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 1rem);
+            flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+.formulario .campo.expandir {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100%);
+          flex: 0 0 calc(100%);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.formulario .campo.expandir label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12.5%;
+          flex: 0 0 12.5%;
+}
+
+.formulario .campo.expandir textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.formulario .campo label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.formulario .campo input[type="text"] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+  height: 2rem;
+}
+
+.formulario .campo .opciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario .campo .opciones label {
+  padding-left: .5rem;
+}
+
+.formulario .campo.enviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.formulario .campo.enviar .boton {
+  background-color: #005b9f;
+  padding: .5rem 1rem;
+  display: block;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.formulario .campo.enviar .boton:hover {
+  cursor: pointer;
+  background-color: #003e6c;
 }
