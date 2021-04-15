@@ -86,10 +86,30 @@ h3 {
     color: var(--second)
 }
 
+.element {
+    border-bottom: 1px solid #5B5B5B;
+    margin-bottom: 3rem;
+}
+
 @media (min-width:768px) {
     .services {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 2rem;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        grid-auto-rows: max-content;
+    }
+
+    .element {
+        border: none;
+    }
+
+    .element:nth-child(3) {
+        grid-row-end: span 2;
     }
 }
