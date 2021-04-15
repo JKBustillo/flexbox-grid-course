@@ -61,3 +61,35 @@ h3 {
 .subtitle {
     font-size: 1.6rem;
 }
+
+.services {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.services h2 {
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.services h2::after {
+    height: .5rem;
+    width: 7rem;
+    background-color: var(--primary);
+    content: '';
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.services i {
+    font-size: 3rem;
+    color: var(--second)
+}
+
+@media (min-width:768px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+}
