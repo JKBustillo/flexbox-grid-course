@@ -1,0 +1,37 @@
+:root {
+    --mainFont: 'Gothic A1', sans-serif;
+    --secondFont: 'Oswald', sans-serif;
+    --primary: #F1A94E;
+    --second: #44B3C2;
+    --light: #FFFFFF;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
