@@ -1,0 +1,153 @@
+:root {
+    --mainFont: 'Lato', sans-serif;
+    --primary: #DA595E;
+    --dark: #484848;
+    --light: #FFFFFF;
+
+    --lodging: #275154;
+    --concert: #DA595D;
+    --class: #598DDA;
+    --ride: #940AD4;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.lodging {
+    color: var(--lodging);
+}
+
+.concert {
+    color: var(--concert);
+}
+
+.class {
+    color: var(--class);
+}
+
+.ride {
+    color: var(--ride);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url(../img/arriba.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav a {
+    color: var(--light);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.nav a:last-of-type {
+    margin-right: 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: max-content auto;
+}
+
+.hero-content h1 {
+    grid-column: 2 / 3;
+    color: var(--light);
+}
+
+.hero-content form {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+    display: flex;
+    height: 4rem;
+}
+
+form input[type="text"] {
+    flex: 1;
+    border: none;
+    border-radius: 10px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: calc(1% + 1rem) calc(1% + .7rem);
+    padding-left: 5rem;
+    font-size: 1.3rem;
+}
+
+form input[type="submit"] {
+    position: absolute;
+    right: 1rem;
+    top: .6rem;
+    padding: .7rem 2rem;
+    border: none;
+    background-color: var(--primary);
+    color: var(--light);
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.info .category {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.info .title {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.info .price {
+    color: var(--dark);
+    font-size: .9rem;
+}
