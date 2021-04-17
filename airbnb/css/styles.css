@@ -205,3 +205,22 @@ form input[type="submit"]:hover {
         text-align: right;
     }
 }
+
+.destinations .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.destinations .card {
+    position: relative;
+}
+
+.destinations .info {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+.destinations .info .title {
+    font-size: 1.8rem;
+    color: var(--light);
+}
