@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const heroImage = document.querySelector('.hero');
+    
+    let i = 1;
+    let time = 0;
+
+    const images = ['arriba.jpg', 'arriba2.jpg'];
+    
+    setInterval(() => {
+        if (time === 40) {
+            time = 0;
+            heroImage.style.backgroundImage = `url(img/${images[i]})`;
+            i === images.length - 1 ? i = 0 : i++;
+        }
+
+        heroImage.style.backgroundPositionY = `-${time}px`;
+
+        time++;
+    }, 100);
+
+});
+
 const floatingBtn = document.querySelector('.floating-btn');
 
 floatingBtn.addEventListener('click', e => {
