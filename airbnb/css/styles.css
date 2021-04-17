@@ -225,6 +225,22 @@ form input[type="submit"]:hover {
     color: var(--light);
 }
 
+.footer {
+    position: fixed;
+    bottom: -100%;
+    background-color: var(--light);
+    width: 100%;
+    padding-bottom: 1rem;
+    -webkit-box-shadow: 0px -5px 14px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -5px 14px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px -5px 14px -3px rgba(0,0,0,0.75);
+    transition: bottom .3s ease;
+}
+
+.footer.active {
+    bottom: 0;
+}
+
 .nav-footer {
     padding: 1rem;
 }
@@ -293,4 +309,23 @@ form input[type="submit"]:hover {
 
 .socials ul li span{
     display: none;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: .5rem 2rem;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 8px 19px -10px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 8px 19px -10px rgba(0,0,0,0.68);
+    box-shadow: 0px 8px 19px -10px rgba(0,0,0,0.68);
+    transition: all .3s ease;
+}
+
+.floating-btn.activo, .floating-btn:hover {
+    background-color: var(--concert);
+    color: var(--light);
 }
