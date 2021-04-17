@@ -224,3 +224,73 @@ form input[type="submit"]:hover {
     font-size: 1.8rem;
     color: var(--light);
 }
+
+.nav-footer {
+    padding: 1rem;
+}
+
+.nav-footer h3 {
+    font-size: 1.2rem;
+}
+
+.nav-footer a {
+    display: block;
+    width: fit-content;
+    margin-bottom: .5rem;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.nav-footer a:hover {
+    text-decoration: underline;
+}
+
+.socials ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex:1 0 auto;
+    list-style: none;
+}
+
+.socials ul li {
+    margin-right: 1rem;
+}
+
+.socials ul li:last-of-type {
+    margin-right: 0;
+}
+
+.socials ul li a {
+    text-decoration: none;
+}
+
+.socials ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+    color: var(--obscuro);
+    font-size: 1.8rem;
+}
+
+.socials ul li a[href*='facebook.com']::before {
+    content: "\f39e";
+}
+
+.socials ul li a[href*='twitter.com']::before {
+    content: "\f099";
+}
+
+.socials ul li a[href*='youtube.com']::before {
+    content: "\f431";
+}
+
+.socials ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+
+.socials ul li a[href*='pinterest.com']::before {
+    content: "\f231 ";
+}
+
+.socials ul li span{
+    display: none;
+}
